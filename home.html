@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <title>CarYard</title>
+  <link rel="icon" href="Pictures/title3.jpg" type="image/x-icon" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Pictures/title4.jpg" class="img-fluid" width="40px" height="30px" alt="photo">
+        CARYARD
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#partners">Our Partners</a>
+          </li>
+          <a class="nav-link" href="#products">Our Products</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Vehicle CLass
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#sedan">Sedan</a></li>
+              <li><a class="dropdown-item" href="#suv">SUV</a></li>
+              <li><a class="dropdown-item" href="#hatchback">Hatchback</a></li>
+              <li><a class="dropdown-item" href="#coupe">Coupe</a></li>
+              <li><a class="dropdown-item" href="#suv-coupe">SUV coupe</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Looking for Other categories?</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Find your dream car" aria-label="Search" />
+          <button class="btn btn-outline-success me-md-3" type="submit">
+            Search
+          </button>
+          <a href="login.html" class="btn btn-outline-info" role="button">LogIn/SignUp</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="Pictures/car1.jpg" class="d-block w-100 img-fluid" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: white;">TESLA MODEL S</h5>
+          <p style="color: white;">"Ride Free"</p>
+          <a href="https://www.tesla.com/models?redirect=no" target="_blank" class="btn btn-outline-light" tabindex="-1"
+            role="button" aria-disabled="true">Explore</a>
+          <br>
+
+          <a href="#partners" style="color: white;">
+            <svg xmlns="http://www.w3.org/2000/svg" style="color: white;  margin-top: 5px;" width="30" height="30"
+              fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="Pictures/car2.jpg" class="d-block w-100 img-fluid" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: rgb(255, 255, 255);">BMW X5</h5>
+          <p style="color: rgb(255, 255, 255);">"The Ultimate Driving Machine"</p>
+          <a href="https://www.bmw.in/en/all-models/x-series/X5/2019/bmw-x5-inspire.html?tl=sea-goog-alon-pro-miy-.-text-septembe-20210914-x5salespD2F0D4EE&gclid=CjwKCAjw8KmLBhB8EiwAQbqNoJXVXtGNMfMhTu3thCs5xn73slgCN93HHhB1f5oTWu0JeM6Enj0i6hoCnsMQAvD_BwE&gclsrc=aw.ds"
+            class="btn btn-outline-light" tabindex="-1" target="_blank" role="button" aria-disabled="true">Explore</a>
+
+
+          <br>
+
+          <a href="#partners" style="color: white;">
+            <svg xmlns="http://www.w3.org/2000/svg" style="color: white;  margin-top: 5px;" width="30" height="30"
+              fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z" />
+            </svg>
+          </a>
+
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Pictures/car3.jpg" class="d-block w-100 img-fluid" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: white;">BENZ S-CLASS</h5>
+          <p style="color: white;">"Best car in The World"</p>
+          <a href="https://www.mercedes-benz.co.in/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/explore.html"
+            target="_blank" class="btn btn-outline-light" tabindex="-1" role="button" aria-disabled="true">Explore</a>
+
+
+          <br>
+
+          <a href="#partners" style="color: white;">
+            <svg xmlns="http://www.w3.org/2000/svg" style="color: white; margin-top: 5px;" width="30" height="30"
+              fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- CARDS BIG-->
+  <section id="partners">
+    <br>
+
+    <p style="
+        margin-left: 105px;
+        margin-bottom: 0px;
+        padding-top: 40px;
+        font-size: 36px;
+      ">
+      OUR PARTNERS:
+    </p>
+
+    <div class="container marketing">
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">BMW : <span class="text-muted">“Sheer Driving Pleasure”</span></h2>
+          <p class="lead">Bayerische Motoren Werke AG, commonly referred to as BMW, is a German multinational corporate
+            manufacturer of luxury vehicles and motorcycles headquartered in Munich, Bavaria, Germany.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="Pictures/Partners/bmw.png" class="img-fluid" height="300px" width="300px" alt="">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">TESLA : <span class="text-muted">"Ride Free"</span></h2>
+          <p class="lead">Tesla, Inc. is an American electric vehicle and clean energy company. Tesla is accelerating
+            the world's transition to sustainable energy with electric cars, solar and integrated renewable energy
+            solutions for homes and vehicles. </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="Pictures/Partners/tesla.png" class="img-fluid" height="300px" width="300px" alt="">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">MERCEDES-BENZ : <span class="text-muted">“The Best or Nothing”</span></h2>
+          <p class="lead">Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.
+            Mercedes-Benz and subsidiary Mercedes-Benz AG – of Daimler AG – are headquartered in Stuttgart,
+            Baden-Württemberg, Germany. Mercedes-Benz produces consumer luxury vehicles and commercial vehicles.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="Pictures/Partners/benz.png" class="img-fluid" height="300px" width="300px" alt="">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">LAMBORGHINI : <span class="text-muted">“Expect the Unexpected”</span></h2>
+          <p class="lead">Automobili Lamborghini S.p.A. is an Italian brand and manufacturer of luxury sports cars and
+            SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary
+            Audi.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="Pictures/Partners/lambo.png" class="img-fluid" height="330px" width="300px" alt="">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">PORSCHE : <span class="text-muted">“Engineered for Magic”</span></h2>
+          <p class="lead">Dr.-Ing. h.c. F. Porsche AG, usually shortened to Porsche, is a German automobile manufacturer
+            specializing in high-performance sports cars, SUVs and sedans, headquartered in Stuttgart,
+            Baden-Württemberg, Germany. Porsche AG is the largest and most traditional Sports Car manufacturer and the
+            most profitable automotive manufacturer in the world.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="Pictures/Partners/porsche.png" class="img-fluid" height="300px" width="500px" alt="">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">AUDI : <span class="text-muted">"Keeping ahead through Technology"</span></h2>
+          <p class="lead">Audi AG is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt,
+            Bavaria, Germany. As a subsidiary of its parent company, the Volkswagen Group, Audi produces vehicles in
+            nine production facilities worldwide. </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="Pictures/Partners/audi.png" class="img-fluid" height="210px" width="500px" alt="">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- CARDS SMALL -->
+
+  <section id="products">
+    <br>
+
+    <p class="my-2" style="
+        margin-left: 60px;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        font-size: 36px;
+        padding-bottom: 10px;
+      ">
+      OUR HOT SELLING PRODUCTS...
+    </p>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/bmw730d.jpg" height="300px" width="500px" class="card-img-top img-fluid"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BMW 7 SERIES</h5>
+            <p class="card-text">The BMW 7 Series Saloon, delivers a new echelon of driving pleasure. Imagined, designed
+              and crafted for individuals who value every moment, discover an experience inspired by those who drive the
+              world.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/911.jpg" height="300px" width="300px" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PORSCHE 911 GT3</h5>
+            <p class="card-text">Our motto for the new 911 GT3 models is: carpe secundum – get the most out of every
+              second.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/q8.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AUDI Q8</h5>
+            <p class="card-text">The Audi Q8 combines the elegance of a four-door luxury coupé with the practical
+              versatility of a large SUV. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/c43amg.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MERCEDES-BENZ C43 AMG</h5>
+            <p class="card-text">A vehicle as dynamic as this deserves a powerful rear end: double round twin tailpipes
+              and the spoiler lip painted in vehicle color.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/bmwgt.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BMW GT</h5>
+            <p class="card-text">The new 6GT is essentially the ‘Tourer’ version of the 5 Series that scores more on
+              space and practicality.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/cayenne.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PORSCHE CAYENNE</h5>
+            <p class="card-text">The most sportiest full-size SUV one can buy. t’s got loads of ground clearance, a
+              spacious cabin and plenty of features.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/gle43amg.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MERCEDES-BENZ GLE43 AMG</h5>
+            <p class="card-text">Here is a vehicle that combines two systems of design that are supposed to be at odds
+              with each other.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/huracan.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LAMBORGHINI HURACAN</h5>
+            <p class="card-text">The Lamborghini Huracán is the perfect fusion of technology and design. With its crisp,
+              streamlined lines, designed to cut through the air and tame the road.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/teslamodels.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TESLA MODEL S</h5>
+            <p class="card-text">With the longest range and quickest acceleration of any electric vehicle in production,
+              Model S Plaid is the highest performing sedan ever built.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </P>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/r8.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AUDI R8</h5>
+            <p class="card-text">The high-performance R8 sports car is testimony to the fact that extreme power and
+              elegance don't have to be mutually exclusive.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col"> 
+        <div class="card h-100">
+          <img src="Pictures/Products/teslaroadster.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TESLA ROADSTER</h5>
+            <p class="card-text">An all-electric vehicle, the Tesla Roadster is the quickest car in the world, with
+              record-setting acceleration, range and performance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pictures/Products/urus.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LAMBORGHINI URUS</h5>
+            <p class="card-text">Lamborghini Urus is the first Super Sport Utility Vehicle in the world to merge the
+              soul of a super sports car with the functionality of an SUV.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- CATEGORIES -->
+
+  <hr class="featurette-divider">
+  <br>
+  <p style="
+  margin-left: 60px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  font-size: 36px;
+  padding-bottom: 10px;
+">
+    CONFUSED ABOUT CATEGORIES? HAVE A LOOK HERE...
+  </p>
+  <section id="sedan">
+    <br>
+    <div class="row featurette my-5 mx-5 bg-light">
+      <div class="col-md-7">
+        <h2 class="featurette-heading mx-5">SEDAN <span class="text-muted">'some extra boot space'</span></h2>
+        <p class="lead mx-5">A car having a closed body and a closed boot separated from the part in which the driver
+          and passengers sit.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="Pictures/Category/sedan.jpg" class="img-fluid" height="250px" width="450px" alt="">
+
+      </div>
+    </div>
+  </section>
+
+  <section id="suv">
+    <br>
+    <div class="row featurette mx-5 my-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading mx-5">SUV <span class="text-muted">'offroading master'</span></h2>
+        <p class="lead mx-5">A sport utility vehicle or SUV is a car classification that combines elements of road-going
+          passenger cars with features from off-road vehicles, such as raised ground clearance and four-wheel drive.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="Pictures/Category/suv.jpg" class="img-fluid" class="me-3" height="300px" width="450px" alt="">
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="hatchback">
+    <br>
+    <div class="row featurette my-5 mx-5 bg-light">
+      <div class="col-md-7">
+        <h2 class="featurette-heading mx-5">HATCHBACK <span class="text-muted">'go easy vehicle'</span></h2>
+        <p class="lead mx-5">A car with a door across the full width at the back end that opens upwards to provide easy
+          access for loading.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="Pictures/Category/hatchback.jpg" class="img-fluid" height="270px" width="450px" alt="">
+
+      </div>
+    </div>
+  </section>
+
+  <section id="coupe">
+    <br>
+    <div class="row featurette mx-5 my-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading mx-5">Coupe <span class="text-muted">'sporty and stylish'</span></h2>
+        <p class="lead mx-5">A coupe or coupé is a passenger car with a sloping or truncated rear roofline and two
+          doors. The term coupé was first applied to horse-drawn carriages for two passengers without rear-facing seats.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="Pictures/Category/coupe.jpg" class="img-fluid" class="me-3" height="230px" width="450px" alt="">
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="suv-coupe">
+    <br>
+    <div class="row featurette  mx-5 bg-light">
+      <div class="col-md-7">
+        <h2 class="featurette-heading mx-5">SUV-Coupe <span class="text-muted">'big and beautifull'</span></h2>
+        <p class="lead mx-5">Coupe SUVs offer car owners a sleek design of a coupe and sportiness of an SUV.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="Pictures/Category/suvcoupe.jpg" class="img-fluid" height="250px" width="450px" alt="">
+
+      </div>
+    </div>
+  </section>
+  <br>
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <div class="container pb-0">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2021 CARYARD, Inc</p>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
